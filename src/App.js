@@ -74,8 +74,8 @@ function App() {
                 ))}
               </tbody>
             </table>
-            <button onClick={handleRefresh}>Refresh</button>
-            <button onClick={handleClearOptions}>Clear Options</button>
+            <button onClick={handleRefresh}>Refresh Vote Count</button>
+            <button onClick={handleClearOptions}>Recreate Options</button>
           </div>
         </div>
       )}

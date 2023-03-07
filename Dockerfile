@@ -13,5 +13,8 @@ RUN npm install
 # Copy the rest of the project files to the container
 COPY . .
 
+# Build the React app
+RUN npm run build
+
 # Specify the command to run the app
 CMD ["npm", "start"]

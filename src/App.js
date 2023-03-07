@@ -34,6 +34,12 @@ function App() {
     }
   };
 
+  const handleClearOptions = () => {
+    if (window.confirm("Are you sure you want to clear all options?")) {
+      setOptions([]);
+    }
+  };
+
   return (
     <div className="container">
       <h1>Voting App</h1>
@@ -69,6 +75,7 @@ function App() {
               </tbody>
             </table>
             <button onClick={handleRefresh}>Refresh</button>
+            <button onClick={handleClearOptions}>Clear Options</button>
           </div>
         </div>
       )}

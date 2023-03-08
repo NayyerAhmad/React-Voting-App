@@ -12,7 +12,7 @@ function App() {
     if (!isNaN(numberOfOptions) && numberOfOptions > 0) {
       const newOptions = [];
       for (let i = 0; i < numberOfOptions; i++) {
-        const name = window.prompt(`Nayyer_Enter name for option ${i + 1}:`);
+        const name = window.prompt(`Enter name for option ${i + 1}:`);
         newOptions.push({ id: i + 1, name, votes: 0 });
       }
       setOptions(newOptions);

@@ -4,17 +4,20 @@ function App() {
   const [options, setOptions] = useState([]);
 
   const handleCreateOptions = () => {
-    const numberOfOptions = parseInt(
+    const numberOfOptions = (
       window.prompt("Enter the number of options:")
     );
 
-    if (numberOfOptions) {
+
+    if (!isNaN(numberOfOptions) && numberOfOptions > 0) {
       const newOptions = [];
       for (let i = 0; i < numberOfOptions; i++) {
         const name = window.prompt(`Enter name for option ${i + 1}:`);
         newOptions.push({ id: i + 1, name, votes: 0 });
       }
       setOptions(newOptions);
+    } else {
+      alert("Please enter a valid number.");
     }
   };
 

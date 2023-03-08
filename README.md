@@ -2,7 +2,7 @@
 
 A simple voting app built using React, Jenkins, and Docker that allows users to cast their votes for different options and display the results in real-time.
 
-**Why Jenkins**
+<!-- **Why Jenkins**
 
 Jenkins is used in this project to automate the build, test, and deployment processes. This helps to ensure that the application is always up-to-date and free from bugs, improving the user experience.
 
@@ -24,4 +24,4 @@ Jenkins is used in this project to automate the build, test, and deployment proc
 
 1. Build a Docker image using the following command: docker build -t \<image-name\> .
 2. Run a Docker container using the following command: docker run -p 3000:3000 \<image-name\>
-3. Open http://localhost:3000 in your browser to view the app.
+3. Open http://localhost:3000 in your browser to view the app. -->

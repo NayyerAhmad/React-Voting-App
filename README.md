@@ -9,7 +9,7 @@ Jenkins is used in this project to automate the build, test, and deployment proc
 **Prerequisites**
 
 - [Node.js](https://nodejs.org/en/) and [npm](https://www.npmjs.com/) installed on your system
-- [Visual Studio Code](https://code.visualstudio.com/)
+<!-- - [Visual Studio Code](https://code.visualstudio.com/) -->
 - [Docker](https://www.docker.com/)
 
 **How to Run**

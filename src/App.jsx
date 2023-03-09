@@ -45,7 +45,7 @@ function App() {
 
   return (
     <div className="container App">
-      <h1>Voting App</h1>
+      <h1>Cast Your Vote</h1>
       {options.length === 0 && (
         <button onClick={handleCreateOptions}>Create Options</button>
       )}

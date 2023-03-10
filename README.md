@@ -1,16 +1,10 @@
 # **Simple Voting App**
 
-A simple voting app built using React, Jenkins, and Docker that allows users to cast their votes for different options and display the results in real-time.
+A simple voting app built using React and Docker that allows users to cast their votes for different options and display the results in real-time.
 
-<!-- **Why Jenkins**
-
-Jenkins is used in this project to automate the build, test, and deployment processes. This helps to ensure that the application is always up-to-date and free from bugs, improving the user experience. -->
-
-**Prerequisites**
+**Prerequisites for using it on your system**
 
 - [Node.js](https://nodejs.org/en/) and [npm](https://www.npmjs.com/) installed on your system
-<!-- - [Visual Studio Code](https://code.visualstudio.com/) -->
-- [Docker](https://www.docker.com/)
 
 **How to Run**
 
@@ -20,8 +14,17 @@ Jenkins is used in this project to automate the build, test, and deployment proc
 4. Run npm start to start the development server
 5. Open http://localhost:3000 in your browser to view the app
 
-**Deployment with Docker**
+## Learning Outcomes
 
-1. Build a Docker image using the following command: docker build -t \<image-name\> .
-2. Run a Docker container using the following command: docker run -p 3000:3000 \<image-name\>
-3. Open http://localhost:3000 in your browser to view the app.
+During the development of the project, I learned and revsed the following core concepts:
+
+1. useState Hook
+2. Conditional rendering
+3. event handling
+4. array manipulation
+
+## Upcoming Features
+
+Making the app full stack with the help of Node.js, Mysql and Express so that the database can be maintained.
+
+Additionally, I would like to allow two differnt types of users to sign in to the app and assign differnet credentials to them

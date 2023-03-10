@@ -1,13 +1,13 @@
 {
   "files": {
-    "main.css": "/React-Voting-App/static/css/main.073c9b0a.css",
+    "main.css": "/React-Voting-App/static/css/main.802f6c12.css",
     "main.js": "/React-Voting-App/static/js/main.8dd64540.js",
     "index.html": "/React-Voting-App/index.html",
-    "main.073c9b0a.css.map": "/React-Voting-App/static/css/main.073c9b0a.css.map",
+    "main.802f6c12.css.map": "/React-Voting-App/static/css/main.802f6c12.css.map",
     "main.8dd64540.js.map": "/React-Voting-App/static/js/main.8dd64540.js.map"
   },
   "entrypoints": [
-    "static/css/main.073c9b0a.css",
+    "static/css/main.802f6c12.css",
     "static/js/main.8dd64540.js"
   ]
 }

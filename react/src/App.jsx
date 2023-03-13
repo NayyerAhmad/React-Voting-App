@@ -1,32 +1,23 @@
 import React, { useState } from "react";
+import Option from "./components/Option";
+import OptionForm from "./components/OptionForm";
 
 function App() {
   const [options, setOptions] = useState([]);
 
-  const handleCreateOptions = () => {
-    const numberOfOptions = (
-      window.prompt("Enter the number of options:")
-    );
-
-
-    if (!isNaN(numberOfOptions) && numberOfOptions > 0) {
-      const newOptions = [];
-      for (let i = 0; i < numberOfOptions; i++) {
-        const name = window.prompt(`Enter name for option ${i + 1}:`);
-        newOptions.push({ id: i + 1, name, votes: 0 });
-      }
-      setOptions(newOptions);
-    } else {
-      alert("Please enter a valid number.");
+  const handleCreateOptions = (numberOfOptions) => {
+    const newOptions = [];
+    for (let i = 0; i < numberOfOptions; i++) {
+      const name = window.prompt(`Enter name for option ${i + 1}:`);
+      newOptions.push({ id: i + 1, name, votes: 0 });
     }
+    setOptions(newOptions);
   };
 
   const handleVote = (id) => {
     setOptions(
       options.map((option) =>
-        option.id === id
-          ? { ...option, votes: option.votes + 1 }
-          : option
+        option.id === id ? { ...option, votes: option.votes + 1 } : option
       )
     );
   };
@@ -47,17 +38,19 @@ function App() {
     <div className="container App">
       <h1>Cast Your Vote</h1>
       {options.length === 0 && (
-        <button onClick={handleCreateOptions}>Create Options</button>
+        <OptionForm handleCreateOption={handleCreateOptions} />
       )}
       {options.length > 0 && (
         <div>
           <div className="options">
             {options.map((option) => (
-              <div className="option" key={option.id}>
-                <h3>{option.name}</h3>
-                <p>Votes: {option.votes}</p>
-                <button onClick={() => handleVote(option.id)}>Vote</button>
-              </div>
+              <Option
+                key={option.id}
+                id={option.id}
+                name={option.name}
+                votes={option.votes}
+                handleVote={handleVote}
+              />
             ))}
           </div>
           <div className="votes">

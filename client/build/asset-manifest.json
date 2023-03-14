@@ -1,0 +1,13 @@
+{
+  "files": {
+    "main.css": "/React-Voting-App/static/css/main.802f6c12.css",
+    "main.js": "/React-Voting-App/static/js/main.c0acb4f7.js",
+    "index.html": "/React-Voting-App/index.html",
+    "main.802f6c12.css.map": "/React-Voting-App/static/css/main.802f6c12.css.map",
+    "main.c0acb4f7.js.map": "/React-Voting-App/static/js/main.c0acb4f7.js.map"
+  },
+  "entrypoints": [
+    "static/css/main.802f6c12.css",
+    "static/js/main.c0acb4f7.js"
+  ]
+}

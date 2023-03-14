@@ -1,6 +1,6 @@
 import React, { useState } from "react";
-import Option from "./components/Option";
-import OptionForm from "./components/OptionForm";
+import Option from "./components/Admin/Option";
+import OptionForm from "./components/Admin/OptionForm";
 
 function App() {
   const [options, setOptions] = useState([]);

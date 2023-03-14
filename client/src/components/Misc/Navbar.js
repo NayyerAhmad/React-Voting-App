@@ -4,9 +4,9 @@ import { Link, useLocation } from "react-router-dom";
 import { green } from "@material-ui/core/colors";
 
 const links = [
-  { title: "Home", path: "/React-Voting-App" },
-  { title: "Admin", path: "/Admin" },
-  { title: "Guest", path: "/Guest" },
+  { title: "Home", path: "/Voting-App" },
+  { title: "Admin", path: "/Voting-App/Admin" },
+  { title: "Guest", path: "/Voting-App/Guest" },
 ];
 
 const useStyles = makeStyles((theme) => ({

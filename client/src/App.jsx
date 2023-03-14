@@ -23,7 +23,7 @@ function App() {
   };
 
   const handleRefresh = () => {
-    if (window.confirm("Are you sure you want to refresh the votes?")) {
+    if (window.confirm("Aree you sure you want to refresh the votes?")) {
       setOptions(options.map((option) => ({ ...option, votes: 0 })));
     }
   };

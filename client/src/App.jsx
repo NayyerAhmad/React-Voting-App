@@ -26,9 +26,9 @@ function App() {
         <Navbar title="Voting App" />
         <Routes>
           <Route exact path="/" element={<Home title="Home" />} />
-          <Route path="/Admin" element={<Admin title="Admin" />}
+          <Route path="/Voting-App/Admin" element={<Admin title="Admin" />}
           />
-          <Route path="/Guest" element={<Guest title="Guest" />}
+          <Route path="Voting-App/Guest" element={<Guest title="Guest" />}
           />
         </Routes>
       </Router>

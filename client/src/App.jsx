@@ -1,7 +1,6 @@
 import React, { useState } from "react";
 import Option from "./components/Option";
 import OptionForm from "./components/OptionForm";
-import Feedback from "./components/Feedback"
 
 function App() {
   const [options, setOptions] = useState([]);
